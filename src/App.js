@@ -1,26 +1,18 @@
-import logo from './logo.svg';
+import React, { Component, Fragment} from 'react';
 import './App.css';
+import BarraDeNavegacion from './Components/BarraDeNavegacion';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <h1>¡Hola mamá, soy programador!</h1>
-      </header>
-    </div>
-  );
-}
+let name = "sí estás leyendo es porque corre bien."
 
-export default App;
+ class App extends Component {
+  render() {
+    return (
+      <Fragment>
+        <BarraDeNavegacion/>
+        <h2 className="App"> Hola, <span>{name}</span> </h2>
+      </Fragment>
+    );
+  }
+} 
+
+export default App; 
