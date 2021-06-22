@@ -2,12 +2,13 @@ import React from 'react';
 import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
 import './BarraDeNavegacion.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartWidget from '../Components/CartWidget';
 
 function BarraDeNavegacion() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" expand="lg" variant="dark" style={{ fontSize: '17px' }}>
       <Container>
-        <Navbar.Brand href="#home">LOGO</Navbar.Brand>
+        <CartWidget/>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
