@@ -1,16 +1,12 @@
 import React from 'react';
-import ItemCount from './ItemCount';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CartWidget from './CartWidget';
 
 const zapatos = [
     {
-        imagen: <CartWidget/>,
         title: "Fashion",
         reference: "Blanco y negro",
         price: "55.000 COP",
         id: 1,
-        boton: <ItemCount />,
     },
 
     {
@@ -18,7 +14,6 @@ const zapatos = [
         reference: "Blanco, negro y multicolor",
         price: "55.000 COP",
         id: 2,
-        boton: <ItemCount />,
     },
 
     {
@@ -26,7 +21,6 @@ const zapatos = [
         reference: "Multicolor",
         price: "55.000 COP",
         id: 3,
-        boton: <ItemCount />,
     },
 
     {
@@ -34,7 +28,6 @@ const zapatos = [
         reference: "Blancon con negro",
         price: "60.000 COP",
         id: 4,
-        boton: <ItemCount />,
     }
 ];
 
